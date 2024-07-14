@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/styling.css">
+
+</head>
+<body>
+
+    <div class="loadingScreen justify-content-center align-items-center position-fixed top-0 start-0 end-0 bottom-0 ">
+        <i class="fa-solid fa-spinner fa-spin fa-7x text-light"></i>
+      </div>
+    
+
+    <nav class=" position-fixed d-flex text-white">
+
+        <div class="navbar-scroll  ">
+
+           <div class="ul ms-3 ">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ps-2">
+                <li class="nav-item">
+                  <a class="nav-link  fs-5" aria-current="page" href="search.html">Search</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="#">Area</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="#">Ingredients</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="form.html">Contact Us</a>
+                </li>
+
+            </ul>
+            </div>
+
+                <div class="icons ms-3 position-fixed">
+                    <i class="fa-brands fa-facebook fs-5 pe-1"></i>
+                    <i class="fa-brands fa-twitter fs-5 pe-1"></i>
+                    <i class="fa-solid fa-globe fs-5"></i>
+                
+                    <h6 class="mt-2">
+                        Copyright Â© 2019 All Rights <br/>Reserved.
+                    </h6>
+                </div>
+           
+
+          </div>
+
+        <div class="icon-bar bg-light d-flex flex-column justify-content-between py-4 position-absolute start-100 ">
+            <span class="ms-2 "><img  src="images/logo (1).png" width="60px" alt=""></span>
+    
+            <div class="container closeBar" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+    
+              <span class="text-black ms-3">
+                <i class="fa-solid fa-globe"></i>
+                <br/>
+    
+                <i class="fa-solid fa-share-nodes"></i>
+            
+            </span>
+    
+    
+        </div>
+
+            
+      
+    </nav>
+
+
+    <section id="contactUs" >
+
+        <div class="container contactContainer">
+          <div class="row  justify-content-center align-content-center position-fixed">
+
+        <div class="d-flex">
+
+            
+            <div class="me-4 mb-4">
+
+                <input oninput="validationForm(this);" class="form-control w-100" type="text" value=""  placeholder="Enter Your Name" id="userName">
+
+                <div class="alert alert-danger p-1 my-1 d-none ">
+                    <p>Special characters and numbers not allowed</p>
+                </div>
+            </div>
+
+            
+            <div class="mb-4">
+
+                <input oninput="validationForm(this);" class="form-control w-100" type="email" value=""  placeholder="Enter Your Email" id="userEmail">
+           
+                <div class="alert alert-danger p-1 my-1 d-none ">
+                    <p>Email not valid *exemple@yyy.zzz</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="d-flex">
+
+        
+            <div class="me-4 mb-4">
+
+                <input oninput="validationForm(this);" class="form-control w-100" type="tel" value=""  placeholder="Enter Your Phone" id="userPhone">
+                <div class="alert alert-danger p-1 my-1 d-none ">
+                    <p>Enter valid Phone Number</p>
+                </div>
+            </div>
+           
+            <div class="mb-4">
+                <input oninput="validationForm(this);" class="form-control w-100" type="number" value=""  placeholder="Enter Your Age" id="userAge">
+
+                <div class="alert alert-danger p-1 my-1 d-none ">
+                    <p>Enter valid age</p>
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="d-flex" id="passForm">
+
+        
+            <div class=" me-4 mb-4">
+                <input oninput="validationForm(this);" class="form-control" type="password" value=""  placeholder="Enter Your Password" id="userPass">
+
+                <div class="alert alert-danger p-1 my-1 d-none ">
+                    <p>Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+                </div>
+            </div>
+            
+            
+            <div class="mb-4">
+
+                <input oninput="validationForm(this);" class="form-control " type="password" value=""  placeholder="Repassword" id="userRepass">
+                <div class="alert alert-danger p-1 my-1 d-none ">
+                    <p>Enter valid repassword</p>
+                </div>
+
+            </div>
+
+        </div>
+
+            <div class="button m-auto">
+
+                <button onclick="ifValidation();" type="button" class="btn btn-outline-danger m-auto">Submit</button>
+
+            </div>
+            
+
+          </div>
+        </div>
+    </section>
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.7.1.min.js"></script>
+      <script src="js/index.js"></script>
+</body>
+</html>

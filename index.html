@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo (1).png" type="image/x-icon">
+    <title>Yummy</title>
+    
+    <!-- links of Css -->
+     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/styling.css">
+
+     <link rel="stylesheet" href="form.html">
+     <link rel="stylesheet" href="search.html">
+     <link rel="stylesheet" href="category.html">
+     <!-- for Fontawesome -->
+     
+    <script src="https://kit.fontawesome.com/9a2383c864.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Loading Screen -->
+
+    <div class="loadingScreen justify-content-center align-items-center position-fixed top-0 start-0 end-0 bottom-0 ">
+        <i class="fa-solid fa-spinner fa-spin fa-7x text-light"></i>
+      </div>
+    
+
+      <nav class=" position-fixed d-flex text-white">
+
+        <div class="navbar-scroll  ">
+
+           <div class="ul ms-3 ">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ps-2">
+                <li class="nav-item">
+                  <a class="nav-link  fs-5" id="search">Search</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link fs-5" id="categories" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" id="area" href="#">Area</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" id="ingredients" href="#">Ingredients</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="form.html">Contact Us</a>
+                </li>
+
+            </ul>
+            </div>
+
+                <div class="icons ms-3 position-fixed">
+                    <i class="fa-brands fa-facebook fs-5 pe-1"></i>
+                    <i class="fa-brands fa-twitter fs-5 pe-1"></i>
+                    <i class="fa-solid fa-globe fs-5"></i>
+                
+                    <h6 class="mt-2">
+                        Copyright Â© 2019 All Rights <br/>Reserved.
+                    </h6>
+                </div>
+           
+
+          </div>
+
+        <div class="icon-bar bg-light d-flex flex-column justify-content-between py-4 position-absolute start-100 ">
+            <span class="ms-2 "><img  src="images/logo (1).png" width="60px" alt=""></span>
+    
+            <div class="container closeBar" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+    
+              <span class="text-black ms-3">
+                <i class="fa-solid fa-globe"></i>
+                <br/>
+    
+                <i class="fa-solid fa-share-nodes"></i>
+            
+            </span>
+    
+    
+        </div>
+
+            
+      
+      </nav>
+
+     
+      <div class="container cardsContainer ">
+        <div class="search row mx-auto py-5 d-none">
+          <div class="col-md-6">
+              <input class="searchByName col-md-6 text-white form-control px-2" type="text" placeholder="Search By Name">
+          </div>
+          <div class="col-md-6">
+              <input class="searchByFirstletter col-md-6 text-white form-control px-2" type="text" placeholder="Search By First Letter">
+          </div>
+      </div>
+        <div class="row rowData gx-4 gy-4" id="">
+
+        </div>
+      </div>
+
+
+      <!-- <div class="container " id="detailsContainer">
+        <div class="row .rowData text-light m-auto justify-content-center align-content-center ">
+            <div class="col-md-4">
+                <img src="images/logo (1).png" width="100%" alt="">
+                <h2>cartora</h2>
+            </div>
+            <div class="col-md-8">
+                <h2>
+                    Instructions
+                </h2>
+                <p class="fs-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum recusandae temporibus assumenda! Eos in veniam eum officia, deserunt fugit tenetur doloremque voluptates unde autem! Debitis tenetur natus totam omnis eaque, eum magni eveniet voluptatibus, odio deleniti id harum vitae incidunt inventore sit eligendi delectus consequatur ut iusto pariatur praesentium? Iste eaque nulla corporis totam nemo rem beatae, veritatis fugiat. Sint, explicabo quae. Dolores eius, suscipit similique nobis ex veritatis, provident iste at dolorum excepturi vero consectetur eos aliquam, sed nemo quod maxime neque. Blanditiis, ducimus eveniet? Excepturi recusandae debitis veritatis illum officiis, ab consequatur? Labore sit voluptatem porro consequatur blanditiis ipsa. Laboriosam, error quo nobis doloremque nesciunt numquam. Quidem unde corporis ea hic nemo. Eos earum vitae minima quae odit perspiciatis dolorem, inventore laudantium officiis neque ratione, ad molestiae tempora dolore deserunt labore maiores blanditiis id autem excepturi? Repellat eos quae eaque, nam exercitationem voluptas numquam beatae, deserunt inventore quaerat explicabo velit corrupti sit provident sapiente accusantium at fugiat! Mollitia reprehenderit hic accusamus accusantium at excepturi nisi, tempora enim in officia voluptatem eaque debitis iure suscipit veniam vel molestias voluptatibus dolorem libero totam fugit eum esse corrupti. Illum, vitae voluptates? Cupiditate reprehenderit sed a sint facere et temporibus sapiente.
+                </p>
+                <h2>Area :</h2>
+                <h2>Category :</h2>
+                <h2 >Recipes :
+                    <div class="d-flex flex-wrap gx-2">
+                <span class="spanRecDetails text-black ">wdjdioej</span>
+                <span class="spanRecDetails text-black ">ednuehdui</span>
+                <span class="spanRecDetails text-black ">feesjwdijw</span>
+                <span class="spanRecDetails text-black ">fededew</span>
+                <span class="spanRecDetails text-black ">fdedcawe</span>
+                <span class="spanRecDetails text-black ">fefew</span>
+                <span class="spanRecDetails text-black ">few</span>
+                <span class="spanRecDetails text-black ">fewf</span>
+                <span class="spanRecDetails text-black ">few</span>
+                <span class="spanRecDetails text-black ">fewf</span>
+                <span class="spanRecDetails text-black ">fewf</span>
+                <span class="spanRecDetails text-black ">few</span>
+                <span class="spanRecDetails text-black ">few</span>
+                <span class="spanRecDetails text-black ">ewf</span>
+                <span class="spanRecDetails text-black ">ewf</span>
+             </div>
+                </h2>
+                <h2 >Tags :
+                    <br>
+                    <span class="spanTagDetails ">defvfwq</span>
+                </h2>
+                <a href="" class="sourceH2 btn btn-success mt-4 fs-5">Source</a>
+                <a href="" class="youtubeH2 btn btn-danger mt-4 fs-5">Youtube</a>
+            </div>
+        </div>
+    </div>
+       -->
+
+
+
+      <!-- <section id="contactUs" >
+
+        <div class="container">
+          <div class="row ">
+            <input class="form-control" type="text" value=""  placeholder="Enter Your Name">
+            <input class="form-control" type="email" value=""  placeholder="Enter Your Email">
+            <input class="form-control" type="tel" value=""  placeholder="Enter Your Phone">
+            <input class="form-control" type="number" value=""  placeholder="Enter Your Age">
+            <input class="form-control" type="password" value=""  placeholder="Enter Your Password">
+            <input class="form-control" type="password" value=""  placeholder="Repassword">
+
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+
+          </div>
+        </div>
+      </section> -->
+
+        
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

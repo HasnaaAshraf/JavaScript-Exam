@@ -1,0 +1,196 @@
+
+body{
+    background-color: black;
+    background-origin: border-box;
+}
+
+/* NavBar */
+
+nav{
+  z-index: 998798;
+}
+.icons{
+  bottom: 10%;
+}
+
+.icon-bar {
+    width: 70px;
+    height: 100vh;
+    background-color: #555;
+    /* left: 20%; */
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+
+.card{
+  --bs-card-bg: transparent;
+  }
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+.fa-solid{
+    cursor: pointer;
+}
+
+.navbar-toggler{
+    background-color: transparent;
+}
+
+.navbar-scroll{
+    width: 250px;
+    height: 100vh;
+    background-color: #0D0D0D;
+
+    left: 0;
+    top: 0;
+
+}
+
+.navbar-nav{
+    padding-top: 2rem;
+    padding-bottom: 17rem ;
+}
+
+
+/* Loading Screen */
+.loadingScreen{
+    background-color: transparent;
+    display: flex;
+}
+
+
+/* main Cards */
+
+.cardsContainer{
+  margin-top: 15px;
+  /* margin-left: 15px; */
+}
+.card{
+  cursor: pointer;
+  border: none;
+}
+
+img{
+  padding: 0;
+  object-fit: cover;
+  border-radius: 5px;
+
+}
+
+.cardItem{
+
+  border-radius: 5px;
+  position: relative;
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.71);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.cardItem:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: black;
+
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+/* section Form */
+
+
+.contactContainer .row{
+ margin-top: 100px;
+ margin-left: 200px;
+}
+
+
+.alert{
+  width: 340px;
+  margin-right: 10px;
+}
+
+/* section Search */
+
+#searchSection .row{
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+#searchSection ::placeholder{
+  color: #555;
+  
+}
+
+#searchSection input{
+  width: 35%;
+}
+
+/*  */
+
+.spanRecDetails{
+  background-color: #CFF4FC;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  
+}
+
+.spanTagDetails{
+  background-color: #F8D7DA;
+  color: #932029;
+  border-radius: 5px;
+  font-weight: 100;
+  font-size: 1.5rem;
+  
+}
+
+#detailsContainer{
+  margin-left: 70px;
+  margin-top: 30px;
+  
+}
+
